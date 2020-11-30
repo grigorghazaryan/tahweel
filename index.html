@@ -58,6 +58,51 @@
         </div>
     </header>
 
+    <header class="mobile--menu">
+        <div class="container container--max">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div  class="mobile--menu__main">
+                        <img src="assets/img/Logo.png" alt="logo" class="mobile--menu__main__img">
+                        <div class="mobile--menu__main__toggler"  onclick="onClickShowMobileMenu()"><i class="lni lni-menu"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile--menu__left hide--menu">
+            <div class="mobile--menu__left__main  mobile--menu__left__show__main">
+                <div class="mobile--menu__left__main__menu">                    
+                    <img src="assets/img/Logo.png" alt="logo" class="mobile--menu__left__main__menu__img">
+                    <ul class="mobile--menu__left__main__menu__navbar">
+                        <li class="mobile--menu__left__main__menu__item">
+                            <a class="mobile--menu__left__main__menu__link active" href="#">Home</a>
+                        </li>
+                        <li class="mobile--menu__left__main__menu__item">
+                            <a class="mobile--menu__left__main__menu__link" href="#">About Tahweel</a>
+                        </li>
+                        <li class="mobile--menu__left__main__menu__item">
+                            <a class="mobile--menu__left__main__menu__link" href="#">Products</a>
+                        </li>    
+                        <li class="mobile--menu__left__main__menu__item">
+                            <a class="mobile--menu__left__main__menu__link" href="#">Media Center</a>
+                        </li>   
+                        <li class="mobile--menu__left__main__menu__item">
+                            <a class="mobile--menu__left__main__menu__link" href="#">Contact Us</a>
+                        </li>   
+                    </ul>
+                </div>
+                
+                <div class="mobile--menu__left__main__hide"   onclick="onClickHideMobileMenu()"><i class="lni lni-close"></i></div>
+            </div>
+
+            <div class="mobile--menu__left__overlay  mobile--menu__left__show__overlay" onclick="onClickHideMobileMenu()">
+
+            </div>
+        </div>
+
+    </header>
+
     <div id="banner" class="carousel slide banner carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -109,7 +154,7 @@
                               <p>Cost, Quality, Performance, Reliability, Serviceability And User Features Are The Characteristics Sought In By Tahweel</p>				      		
                             </div>	
                             <div class="banner__link">
-                                <a href="#">VIEW CATALOGUE</a>
+                                <a href="#">VIEW Website</a>
                                 <a href="#">LEARN MORe</a>
                             </div>
                         </div>
@@ -260,14 +305,17 @@
 					  <div class="tab-content">
 					    <div id="tab1" class="container tab-pane fade home--why__content"><br>
 					      <h3>Manufacturing Excellency</h3>
-					      <p>Tahweel multi-layer cast film’s manufacturing technology has set a new industry standard for production line innovation. With the wide range of different load wrapping specifications that exist today, and the wide variety of machinery used to wrap loads, an extensive range in types and sizes of films are required for manufacturers to attain the best results possible. With Tahweel, we offer a complete range of films to ensure that our supply of films match both load and machine load-wrapping requirements in the most efficient and effective manner.</p>
+					      <p>Tahweel multi-layer cast film’s manufacturing technology has set a new industry standard for production line innovation. With the wide range of different load wrapping specifications that exist today, and the wide variety of machinery used to wrap loads, an extensive range in types and sizes of films are required for manufacturers to attain the best results possible.<br/><br/>
+                            With Tahweel, we offer a complete range of films to ensure that our supply of films match both load and machine load-wrapping requirements in the most efficient and effective manner.</p>
 
 					    </div>
 					    <div id="tab2" class="container tab-pane fade home--why__content"><br>
 					      <h3>Quality Assurance</h3>
 					      <p>Quality has always been Tahweel's primary concern. Therefore, the company has always invested in state of the art equipment, technology and human resources with a global experience. 
-					      The company's quality concept is strictly implemented right from the receipt of raw materials through the manufacturing process, premises, equipment, laboratory tests, inspection and shipment. 
-					  		Our quality control, advanced high end lab equipment, ensures customer satisfaction of our products. We keep track of our products quality, to ensure the quality of our products after sales.</p>
+                            <br/><br/>
+                            The company's quality concept is strictly implemented right from the receipt of raw materials through the manufacturing process, premises, equipment, laboratory tests, inspection and shipment. 
+                            <br/><br/>
+                            Our quality control, advanced high end lab equipment, ensures customer satisfaction of our products. We keep track of our products quality, to ensure the quality of our products after sales.</p>
 					    </div>
 					    <div id="tab3" class="container tab-pane fade home--why__content"><br>
 					      <h3>Product Engineering</h3>
@@ -275,7 +323,9 @@
 					    </div>
 					    <div id="tab4" class="container tab-pane fade home--why__content"><br>
 					      <h3>Delivery</h3>
-					      <p>Having a giant warehouse adjacent to manufacturing site in Saudi Arabia, stocks are monitored and pre-determined quantities of products are in place to ensure just-on-time delivery to Clients. Tahweel's full-fledged logistic departments ensure proper documentations and uses the best fleet services to secure on time deliveries to clients.</p>
+					      <p>Having a giant warehouse adjacent to manufacturing site in Saudi Arabia, stocks are monitored and pre-determined quantities of products are in place to ensure just-on-time delivery to Clients. 
+                            <br/><br/>
+                            Tahweel's full-fledged logistic departments ensure proper documentations and uses the best fleet services to secure on time deliveries to clients.</p>
 					    </div>
 					  </div>
 					</div>
@@ -293,17 +343,17 @@
 			
 			<div class="col-md-4 col-xs-12 footer__logo__col">
                 <a href="#" class="footer__logo__col__link">
-                    <img src="assets/img/logo/Tahweel film.png" class="about-img">
+                    <img src="assets/img/logo/Tahweel film.svg" class="about-img">
                 </a>
             </div>
             <div class="col-md-4 col-xs-12 footer__logo__col">
                 <a href="#" class="footer__logo__col__link">
-                    <img src="assets/img/logo/Tahweel app.png" class="about-img">
+                    <img src="assets/img/logo/Tahweel app logo-Eng.svg" class="about-img">
                 </a>
             </div>
             <div class="col-md-4 col-xs-12 footer__logo__col">
                 <a href="#" class="footer__logo__col__link">
-                    <img src="assets/img/logo/Tahweel agriculture.png" class="about-img">
+                    <img src="assets/img/logo/Tahweel argiculture.svg" class="about-img">
                 </a>
             </div>
             
@@ -379,5 +429,7 @@
             once : true
         });
     </script>
+	<script src="assets/js/mobile-menu.js"></script>
+
 </body>
 </html>
