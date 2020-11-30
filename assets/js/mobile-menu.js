@@ -3,7 +3,9 @@ function onClickShowMobileMenu() {
 
     for (var i=0; i<main_menu.length; i++) {
         main_menu.item(i).classList.add('mobile--menu__left__show');
-        main_menu.item(i).classList.remove('hide--menu');
+        if(document.getElementsByClassName('hide--menu')){
+            main_menu.item(i).classList.remove('hide--menu');
+        }
     }
 
     var menu = document.getElementsByClassName('mobile--menu__left__show__main');
@@ -17,6 +19,8 @@ function onClickShowMobileMenu() {
     for (var i=0; i<overlay.length; i++) {
        overlay.item(i).classList.add('show--menu');
     }
+
+    document.body.classList.add("overflow--hidden");
 }
 
 function onClickHideMobileMenu(){
@@ -38,4 +42,5 @@ function onClickHideMobileMenu(){
     for (var i=0; i<overlay.length; i++) {
         overlay.item(i).classList.remove('show--menu');
     }
+    document.body.classList.remove("overflow--hidden");
 }

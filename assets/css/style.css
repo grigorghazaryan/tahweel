@@ -18,6 +18,10 @@
   src: url(../font/GothamBold.ttf);
 }
 
+.overflow--hidden {
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 1800px) {
   .container--max {
     max-width: 1655px;
@@ -60,14 +64,21 @@ body {
   padding-right: 30px !important;
 }
 
-.mobile--menu__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .mobile--menu__main__img {
   max-height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobile--menu__main__toggler {
+  float: right;
+  margin-top: 18px;
+}
+
+.mobile--menu__main__toggler i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #005F84;
 }
 
 .mobile--menu__left {
@@ -83,10 +94,11 @@ body {
 
 .mobile--menu__left__main {
   background: #ffffff;
-  max-width: 60%;
+  max-width: 70%;
   height: 100%;
   position: relative;
   z-index: 2;
+  overflow: auto;
   transform: translate3d(-100%, 0, 0);
   -webkit-transform: translate3d(-100%, 0, 0);
   -webkit-transition: -webkit-transform  2s ease;
@@ -98,12 +110,48 @@ body {
 
 .mobile--menu__left__main__menu {
   padding-top: 65px;
+  padding-left: 30px;
+}
+
+.mobile--menu__left__main__menu__img {
+  width: 50%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.mobile--menu__left__main__menu__navbar {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile--menu__left__main__menu__navbar__item__link {
+  color: #474747;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 13px 20px;
+  display: inline-block;
+  font-family: GothamMediumRegular;
+}
+
+.mobile--menu__left__main__menu__navbar__item__link.active {
+  color: #8CB044;
+}
+
+.mobile--menu__left__main__menu__navbar__item__link:hover {
+  color: #8CB044;
+  text-decoration: none;
 }
 
 .mobile--menu__left__main__hide {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.mobile--menu__left__main__hide i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #005F84;
 }
 
 .mobile--menu__left__overlay {
@@ -242,6 +290,12 @@ body {
   }
   .mobile--menu {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .mobile--menu__left__main {
+    max-width: 80%;
   }
 }
 
@@ -412,7 +466,7 @@ body {
   }
   .footer__left__form__submit {
     font-size: 26px;
-    padding: 12px 45px;
+    padding: 13px 45px;
   }
   .footer__center__menu ul li a {
     font-size: 20px;
