@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahweel</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Lineicones -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- AOS animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+
+
+
+    <header class="header">
+        <div class="container container--max">
+            <div class="row">
+                <nav class="navbar navbar-expand-md navbar-light bg-light header__menu">
+                    
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About Tahweel</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                            </li>    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Media Center</a>
+                            </li>   
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>   
+                        </ul>
+                        </div>  
+                    
+                </nav>
+            </div>
+    </div>
+</header>
+
+<header class="mobile--menu">
+    <div class="container container--max">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div  class="mobile--menu__main">
+                    <a href="index.html">
+                        <img src="assets/img/Logo.png" alt="logo" class="mobile--menu__main__img">
+                    </a>
+                    <div class="mobile--menu__main__toggler"  onclick="onClickShowMobileMenu()"><i class="lni lni-menu"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile--menu__left hide--menu">
+        <div class="mobile--menu__left__main  mobile--menu__left__show__main">
+            <div class="mobile--menu__left__main__menu">                    
+                <img src="assets/img/Logo.png" alt="logo" class="mobile--menu__left__main__menu__img">
+                <ul class="mobile--menu__left__main__menu__navbar">
+                    <li class="mobile--menu__left__main__menu__navbar__item">
+                        <a class="mobile--menu__left__main__menu__navbar__item__link" href="index.html">Home</a>
+                    </li>
+                    <li class="mobile--menu__left__main__menu__navbar__item">
+                        <a class="mobile--menu__left__main__menu__navbar__item__link active" href="about.html">About Tahweel</a>
+                    </li>
+                    <li class="mobile--menu__left__main__menu__navbar__item">
+                        <a class="mobile--menu__left__main__menu__navbar__item__link" href="#">Products</a>
+                    </li>    
+                    <li class="mobile--menu__left__main__menu__navbar__item">
+                        <a class="mobile--menu__left__main__menu__navbar__item__link" href="#">Media Center</a>
+                    </li>   
+                    <li class="mobile--menu__left__main__menu__navbar__item">
+                        <a class="mobile--menu__left__main__menu__navbar__item__link" href="#">Contact Us</a>
+                    </li>   
+                </ul>
+            </div>
+            
+            <div class="mobile--menu__left__main__hide"   onclick="onClickHideMobileMenu()"><i class="lni lni-close"></i></div>
+        </div>
+
+        <div class="mobile--menu__left__overlay  mobile--menu__left__show__overlay" onclick="onClickHideMobileMenu()">
+
+        </div>
+    </div>
+
+</header>
+
+
+
+    <div class="about--overview overflow--hidden">
+            
+        
+        <div class="container container--medium">
+            <div class="row about--overview__content">
+                <div class="col-md-6 col-xs-12  col-lg-6 offset-lg-1 about--overview__content__text">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class=" about--overview__content__text__title page--title"> <span> Overview</span></h1>
+                        <hr class="about--overview__content__text__line  page--title__line" />
+                        <p class="about--overview__content__text__text text--content">
+                            Tahweel is specialized in the production of highly versatile Cast Pallet-Wrap Stretch Film to the world market. The company has a plant in Saudi Arabia (Rabigh), with a reach to many markets around the globe. 
+                        </p>
+                        <p class="about--overview__content__text__text text--content">
+                            Tahweel acquired in shorter period of time a reputation for its products' technical excellence and high quality standards of service offered to clients. 
+                        </p>
+                        <p class="about--overview__content__text__text text--content">
+                            Tahweel offers only the best in quality in terms of products and integrated solutions, thanks to its research and development strategies.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-xs-12 col-lg-5">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="about--overview__content__img rounded--img">
+                            <img src="assets/img/About Tahweel.jpg" >
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about--integrated overflow--hidden">
+            
+        
+        <div class="container container--medium">
+            <div class="row about--integrated__content">
+                <div class="col-md-12 col-xs-12  col-lg-11 offset-lg-1 about--integrated__content__text">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class=" about--integrated__content__text__title page--title"> Tahweel <span>Integrated</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12  col-lg-5 offset-lg-1">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <p class="about--integrated__content__left text--content">Tahweel Integrated Company has a competitive strategic position in the world of Cast Pallet-Wrap Stretch Film market. With a state of the art industrial plant in Saudi Arabia (Rabigh), Tahweel provides quality driven, cost effective and innovative tailor made industrial solutions to Asian and European countries. With long years of experience in stretch film business , Tahweel is now ranked as a prominent market player in the field with current export capacity of 130 container per month, all shipped to demanding international clients around the globe.Thanks to the annual production capacity of 45,000 metric tons of strech films planned to meet all manual, machine and power stretch film application requirements .Tahweel has advanced, top of the line and high tech European made machines, reflecting experience in the international market, tailoring extrusion lines to customer requirements. Tahweel will keep on adopting the leading technological developments in the machinery and methods used to secure and protect items of all kinds and loads of all sizes, to enable achieving smooth operations, quality and low costs standards.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-xs-12 col-lg-4  ">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="">
+                            <p class="about--integrated__content__right text--content">Tahweel corporate mandate and objectives are to provide world markets with integrated products to meet the growing needs of the ever growing global markets. 
+                                
+                                Tahweel delivers a complete range of diversified, value added, performance enhanced products for the demanding markets. 
+                                
+                                Tahweel has a set of corporate and manufacturing standards for combining excellent products pricing with outstanding quality. 
+                                
+                                Tahweel is commitment to business integrity, product quality, client services and environmental responsibility. The company's relationship with business stakeholders are built to last.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about--mission  overflow--hidden">
+            
+        
+        <div class="container container--medium">
+            <div class="row about--mission__content">
+                <div class="col-md-6 col-xs-12  col-lg-3 offset-lg-1 about--mission__content__text">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class=" about--mission__content__text__title page--title">Mission 
+                            <span>& Vision</span></h1>
+                        <hr class="about--mission__content__text__line  page--title__line" />
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-xs-12 col-lg-6 offset-lg-1">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="">
+                            <div class="about--mission__content__info">
+                                <h2 class="about--mission__content__info__subtitle">Mission</h2>
+                                <p  class="about--mission__content__info__text text--content">To achieve excellence collectively in terms of quality, innovation and service by offering eco-friendly products and a proactive consolidated presence in all local, regional and global markets.</p>
+                            </div>
+                            <div class="about--mission__content__info">
+                                <h2 class="about--mission__content__info__subtitle">Vision</h2>
+                                <p  class="about--mission__content__info__text text--content">To be recognized as a worldwide leader in the stretch film production, building on our growing reliability to partners, offering packaging solutions for customers, through innovation, eco-sustainability and the best price-quality ratio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about--history overflow--hidden">
+            
+        
+        <div class="container container--medium">
+            <div class="row about--history__content">
+                <div class="col-md-6 col-xs-12  col-lg-3 offset-lg-1 about--history__content__text">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class=" about--history__content__text__title page--title"><span>History</span></h2>
+                        <hr class="about--history__content__text__line  page--title__line" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-lg-8">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="about--history__content__right">
+                            <p class="about--history__content__right__text text--content">Tahweel was established in 2012 headquarted in Jaddeh - Kingdom Of Saudi Arabia. 
+        
+                                Tahweel business operation were headed by a series of competent administrators, industrial engineers, technicians and experts. 
+                                
+                                With 40 years of collitive expertise, tahweel's unique knowledge and know-how necessary to meet customer's expectations moved step beyond competitors in the field, yet setting the benchmark in today's exciting world of manufacturing solutions. 
+                                
+                                Tahweel has expanded its operations into Asia, North Africa and Europe with a strategic vision to be a true business conglomorate. 
+                                
+                                Focusing on its strategic vision and soliciting the support of its affiliates, colleagues, employees, buyers, and all those associated with its businesses, Tahweel is now right on the track to continue its sustainable growth. 
+                                
+                                The relationships with clients gave Tahweel its flourishing entity of today.</p>
+                   
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about--around--the--world overflow--hidden">
+            
+        
+        <div class="container container--max">
+            <div class="row about--around--the--world__content">
+                <div class="col-md-12 col-xs-12  col-lg-12 about--around--the--world__content__text">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class=" about--around--the--world__content__text__title page--title">Tahweel 
+                            <span>Around The World</span></h2>
+                        <hr class="about--around--the--world__content__text__line  page--title__line" />
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 col-lg-6  offset-lg-2">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="about--around--the--world__content__right">
+                            <p class="about--around--the--world__content__right__text text--content">Tahweel is a global supplier for flexible packaging solutions, known for its outstanding quality Continuously improving its service and quality standards. 
+                                
+                                Tahweel has been a genuine market leader for setting high quality standards in the flexible packaging industry by partnering with leading global brands. 
+                                
+                                Tahweel owns outstanding production facilities in the world with style of construction, infrastructure and high technology of production and scale.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="about--environment overflow--hidden">
+            
+        
+        <div class="container container--medium">
+            <div class="row about--environment__content">
+                <div class="col-md-6 col-xs-12  col-lg-6 about--environment__content__text">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class=" about--environment__content__text__title page--title">Environment 
+                            <span>Health & Safety</span></h2>
+                        <hr class="about--environment__content__text__line  page--title__line" />
+                        <p class="about--environment__content__text__text text--content">Tahweel develops partnerships between departmental personnel to ensure a safe work environment and compliance with the company's policy and applicable regulations in the most efficient manner possible. These endeavors include waste disposal, recycling, clean environment, elimination of noise pollution and harmful gases.
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-xs-12 col-lg-5 offset-lg-1">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="about--environment__content__img rounded--img">
+                            <img src="assets/img/about/Group 192.jpg" >
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row about--environment__info">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about--environment__info__cart">
+                            <img src="assets/img/about/Component 55 – 1.svg" alt="" class="about--environment__info__cart__image">
+                            <div class="about--environment__info__cart__text text--content">
+                                <p>Tahweel's policy and applicable regulations ensures no harmful fumes/gasses are discharged into the air</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about--environment__info__cart">
+                            <img src="assets/img/about/Component 43 – 1.svg" alt="" class="about--environment__info__cart__image">
+                            <div class="about--environment__info__cart__text text--content">
+                                <p>Tahweel's policy and applicable regulations ensures no toxic waste is discharged to the environment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                    <div data-aos="fade-left" data-aos-duration="1000">                    
+                        <div class="about--environment__info__cart">
+                            <img src="assets/img/about/Component 57 – 1.svg" alt="" class="about--environment__info__cart__image">
+                            <div class="about--environment__info__cart__text text--content">
+                                <p>Tahweel has strict safety guidelines for the employees in the work environment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-3">
+                    <div data-aos="fade-left" data-aos-duration="1000">                    
+                        <div class="about--environment__info__cart">
+                            <img src="assets/img/about/Component 45 – 1.svg" alt="" class="about--environment__info__cart__image">
+                            <div class="about--environment__info__cart__text text--content">
+                                <p>Tahweel offers work place and employee awareness programs/workshops</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about--people overflow--hidden">
+            
+        
+        <div class="container container--medium">
+            <div class="row about--people__content">
+                <div class="col-md-6 col-xs-12  col-lg-6  about--people__content__img">
+                    
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class=" rounded--img">
+                            <img src="assets/img/about/Group 194.jpg" >
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-xs-12 col-lg-6 about--people__content__text">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <h1 class=" about--people__content__text__title page--title"> Tahweel's <span>People</span></h1>
+                        <hr class="about--people__content__text__line  page--title__line" />
+                        <p class="about--people__content__text__text text--content">
+                            Since establishment, Tahweel's culture that incorporates friendliness, kindness, integrity, and compassion has been evolving. Allowing it to become one of our most distinguishing characteristic. our employee's indivisual commitment to such values drives Tahweel, and ultimately result in the company's successes. Satisfying our clients with innovative technology and superior quality, value and service, We relentlessly invest in and developing our employee's talents, ingenuity and leadership towards stable and sustainable growth.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container container--medium">
+
+        <div class="row footer__logo">
+            
+            
+            <div class="col-md-4 col-xs-12 footer__logo__col">
+                <a href="#" class="footer__logo__col__link">
+                    <img src="assets/img/logo/Tahweel film.svg" class="about-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12 footer__logo__col">
+                <a href="#" class="footer__logo__col__link">
+                    <img src="assets/img/logo/Tahweel app logo-Eng.svg" class="about-img">
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12 footer__logo__col">
+                <a href="#" class="footer__logo__col__link">
+                    <img src="assets/img/logo/Tahweel argiculture.svg" class="about-img">
+                </a>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <footer class="footer">
+		<div class="container container--max">
+			<div class="row">			
+				<div class="col-xs-12 col-md-4">
+					<div class="footer__left">
+						<h4 class="footer__left__title">Contact Us</h4>
+						<p class="footer__left__text">Our professional team is ready to guide you with our latest products, news, and special offers.</p>
+                        <form  class="footer__left__form">
+                            <input type="text"  class="footer__left__form__input" placeholder="Email Address">
+                            <button  class="footer__left__form__submit">Send</button>
+                        </form>
+                    </div>
+				</div>
+				<div class="col-xs-12 col-md-3 offset-md-1">
+					<div class="footer__center">
+						<div class="footer__center__menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About Tahweel</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Media Center</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="footer__right">
+						<div class="footer__right__social--icon">
+                            <a href="#" target="_blank"><i class="lni lni-facebook-filled"></i></a>
+                            <a href="#" target="_blank"><i class="lni lni-twitter-original"></i></a>
+                            <a href="#" target="_blank"><i class="lni lni-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+        <div class="footer__copyright">
+            <div class="container container--max">
+                <div class="row">			
+                    <div class="col-xs-12 col-md-6">
+                        <ul class="footer__copyright__menu">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p class="footer__copyright__text">© 2020 Tahweel Integrated. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- AOS animation on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once : true
+        });
+    </script>
+	<script src="assets/js/mobile-menu.js"></script>
+
+</body>
+</html>

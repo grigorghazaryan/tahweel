@@ -22,6 +22,10 @@
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 1800px) {
   .container--max {
     max-width: 1655px;
@@ -743,6 +747,8 @@ body {
   right: -33px;
   bottom: 29px;
   z-index: -1;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
 }
 
 .home--about__content__text {
@@ -1236,6 +1242,391 @@ body {
   }
   .home--why__content h3 {
     font-size: 20px;
+  }
+}
+
+.page--title {
+  font-family: GothamMediumRegular;
+  font-size: 55px;
+  color: #005F84;
+  white-space: pre-line;
+}
+
+.page--title span {
+  font-family: GothamBlackRegular;
+}
+
+.page--title__line {
+  border-top: 7px solid #71C9F0;
+  max-width: 100px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.rounded--img img {
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.rounded--img::after {
+  content: '';
+  background-image: url("../img/About Tahweel background dots.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  right: -33px;
+  bottom: 29px;
+  z-index: -1;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.text--content {
+  font-family: GothamMediumRegular;
+  font-size: 16px;
+  white-space: pre-line;
+}
+
+.about--overview {
+  padding-top: 100px;
+  background: #edf8fc;
+}
+
+.about--overview__content__text__text {
+  color: #333333;
+  font-family: GothamMediumRegular;
+  font-size: 16px;
+  position: relative;
+  line-height: 24px;
+}
+
+.about--overview__content__text__text::before {
+  content: '';
+  border-left: 7px solid #005A80;
+  position: absolute;
+  height: 70%;
+  left: -46px;
+  top: 27px;
+}
+
+.about--overview__content__img {
+  position: relative;
+  margin-top: 70px;
+}
+
+.about--integrated {
+  background: #edf8fc;
+  padding-bottom: 60px;
+}
+
+.about--integrated__content__text {
+  margin-bottom: 60px;
+}
+
+.about--integrated__content__text__title {
+  color: #71C9F0;
+  padding-top: 80px;
+}
+
+.about--integrated__content__left {
+  line-height: 24px;
+}
+
+.about--integrated__content__right {
+  line-height: 24px;
+}
+
+.about--mission {
+  background: url("../img/about/Mission_Vission.jpg");
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about--mission::before {
+  content: '';
+  background: rgba(0, 95, 132, 0.8);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about--mission__content__text__title {
+  color: #ffffff;
+}
+
+.about--mission__content__info {
+  position: relative;
+  margin-left: 40px;
+}
+
+.about--mission__content__info__subtitle {
+  font-family: GothamBold;
+  color: #50B7E0;
+  font-size: 25px;
+  margin: 0px;
+}
+
+.about--mission__content__info__text {
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+.about--mission__content__info::before {
+  content: '';
+  border: 5px solid #50B7E0;
+  position: absolute;
+  width: 18px;
+  height: 100%;
+  border-right: 0;
+  left: -40px;
+}
+
+.about--history {
+  background-color: #edf8fc;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-image: url("../../../assets/img/about/About-history-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.about--history__content__right {
+  padding-top: 80px;
+}
+
+.about--history__content__right__text {
+  font-family: GothamBookRegular;
+  line-height: 24px;
+}
+
+.about--around--the--world {
+  background-color: #005F84;
+  background-image: url("../../../assets/img/about/around-the-world.png");
+  background-repeat: no-repeat;
+  background-position: right 40px;
+  background-size: 63%;
+  padding-bottom: 135px;
+  padding-top: 73px;
+}
+
+.about--around--the--world__content__text__title {
+  color: #ffffff;
+}
+
+.about--around--the--world__content__right__text {
+  color: #ffffff;
+  line-height: 24px;
+}
+
+.about--environment {
+  padding-top: 150px;
+}
+
+.about--environment__content__text__text {
+  color: #005A80;
+  margin-top: 50px;
+}
+
+.about--environment__info {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.about--environment__info > div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about--environment__info__cart {
+  position: relative;
+}
+
+.about--environment__info__cart__image {
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.about--environment__info__cart__text {
+  position: absolute;
+  top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  bottom: 0;
+  background: rgba(0, 90, 128, 0.8);
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  color: #ffffff;
+  padding: 0px 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.about--environment__info__cart__text:hover {
+  opacity: 1;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.about--people {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-color: #edf8fc;
+}
+
+.about--people__content__img {
+  margin-top: 25px;
+}
+
+.about--people__content__text__text {
+  line-height: 24px;
+  margin-top: 65px;
+  color: #333333;
+}
+
+.about--people__content__text__title {
+  color: #333333;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about--people__content__img {
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about--environment__info > div {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .about--environment__info > div:first-child {
+    padding-left: 15px;
+  }
+  .about--environment__info > div:last-child {
+    padding-right: 15px;
+  }
+  .about--environment__info__cart__text {
+    padding-top: 25px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .page--title {
+    font-size: 75px;
+  }
+  .page--title__line {
+    border-top: 10px solid #71C9F0;
+    max-width: 135px;
+  }
+  .about--overview {
+    padding-top: 200px;
+  }
+  .about--overview__content__text__text {
+    font-size: 20px;
+    padding-right: 155px;
+  }
+  .about--overview__content__img {
+    position: relative;
+    margin-top: 100px;
+  }
+  .text--content {
+    font-size: 20px;
+  }
+  .about--mission__content__info__subtitle {
+    font-size: 36px;
+  }
+  .about--mission__content__info::before {
+    border: 7px solid #50B7E0;
+    border-right: 0;
+  }
+  .about--history__content__right {
+    padding-top: 100px;
+  }
+  .about--environment__content__text {
+    padding-right: 70px;
+  }
+  .about--environment .container--medium {
+    max-width: 1380px;
+  }
+  .about--environment__info__cart__text {
+    padding-top: 50px;
+  }
+  .about--people__content__img {
+    padding-right: 15px;
+  }
+  .about--integrated__content__left {
+    padding-right: 66px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .rounded--img ::after {
+    right: -22px;
+    bottom: 23px;
+  }
+  .about--overview__content__text__text::before {
+    left: -26px;
+  }
+  .about--environment__info__cart__text {
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page--title {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  .rounded--img ::after {
+    right: -7px;
+    bottom: 16px;
+  }
+  .about--overview {
+    padding-top: 30px;
+  }
+  .about--overview__content__text__text {
+    margin-left: 30px;
+  }
+  .text--content {
+    font-size: 14px;
+  }
+  .about--integrated__content__text__title {
+    padding-top: 30px;
+  }
+  .about--history {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .about--history__content__right {
+    padding-top: 20px;
+  }
+  .about--mission {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .about--around--the--world {
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+  .about--environment {
+    padding-top: 30px;
+  }
+  .about--environment__content__text__text {
+    margin-bottom: 60px;
+  }
+  .about--people {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
