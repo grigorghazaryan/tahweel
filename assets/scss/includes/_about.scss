@@ -111,6 +111,10 @@
         &__info{
             position: relative;
             margin-left: 40px;
+            margin-bottom: 60px;
+            &:last-child{                
+                margin-bottom: 0px;
+            }
             &__subtitle{
                 font-family: GothamBold;
                 color: #50B7E0;
@@ -166,6 +170,7 @@
             }
         }
         &__right{
+            padding-top: 80px;
             &__text{
                 color: #ffffff;
                 line-height: 24px;
@@ -182,6 +187,11 @@
             &__text{
                 color: #005A80;
                 margin-top: 50px;
+                line-height: 24px;
+            }
+            
+            &__img{
+                display: none;
             }
         }
     }
@@ -248,20 +258,13 @@
             &__title{
                 color: #333333;
             }
-        }
-    }
-    
-}
-@media only screen and (min-width: 1200px) {
-    
-    .about--people{
-        &__content{
             &__img{
-                padding-right: 60px;
+                position: relative;
+                display: none;
             }
         }
-        
     }
+    
 }
 @media only screen and (min-width: 1200px) {
     .about--environment{
@@ -284,6 +287,14 @@
                 }
             }
         }
+    }
+    .about--people{
+        &__content{
+            &__img{
+                padding-right: 60px;
+            }
+        }
+        
     }
 }
 @media only screen and (min-width: 1800px) {
@@ -456,11 +467,65 @@
                 &__text{
                     margin-bottom: 60px;
                 }
+                &__img{
+                    display: block;
+                    position: relative;
+                }
+                &__line{
+                    margin-bottom: 70px;
+                }
+            }
+            &__img{
+                display: none;
+            }
+        }
+        &__info{
+            margin-top: 0px;
+            &__cart{
+                &__text{                    
+                    padding: 0px 22px 0px 22px;
+                }
+                
             }
         }
     }
     .about--people{
         padding-top: 50px;
         padding-bottom: 50px;
+        &__content{
+            &__img{
+                display: none;        
+            }
+            &__text{
+                &__img{
+                    position: relative;
+                    display: block;
+                }
+                &__line{
+                    margin-bottom: 60px;
+                }
+                &__text{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 425px) {
+    .about--environment{
+        &__info{
+            &__cart{
+                &__text{                    
+                    padding: 0px 22px 0px 22px;
+                    border-bottom-left-radius: 50px;
+                    border-top-right-radius: 50px;
+                }
+                &__image{
+                    border-bottom-left-radius: 50px;
+                    border-top-right-radius: 50px;
+                }
+            }
+        }
     }
 }

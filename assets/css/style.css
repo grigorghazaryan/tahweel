@@ -598,6 +598,8 @@ body {
   top: auto;
   opacity: 1;
   padding: 15px 15px;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .banner .carousel-control-prev svg {
@@ -630,6 +632,8 @@ body {
   top: auto;
   opacity: 1;
   padding: 15px 15px;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .banner .carousel-control-next svg {
@@ -1363,6 +1367,11 @@ body {
 .about--mission__content__info {
   position: relative;
   margin-left: 40px;
+  margin-bottom: 60px;
+}
+
+.about--mission__content__info:last-child {
+  margin-bottom: 0px;
 }
 
 .about--mission__content__info__subtitle {
@@ -1420,6 +1429,10 @@ body {
   color: #ffffff;
 }
 
+.about--around--the--world__content__right {
+  padding-top: 80px;
+}
+
 .about--around--the--world__content__right__text {
   color: #ffffff;
   line-height: 24px;
@@ -1432,6 +1445,11 @@ body {
 .about--environment__content__text__text {
   color: #005A80;
   margin-top: 50px;
+  line-height: 24px;
+}
+
+.about--environment__content__text__img {
+  display: none;
 }
 
 .about--environment__info {
@@ -1498,10 +1516,9 @@ body {
   color: #333333;
 }
 
-@media only screen and (min-width: 1200px) {
-  .about--people__content__img {
-    padding-right: 60px;
-  }
+.about--people__content__text__img {
+  position: relative;
+  display: none;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1519,6 +1536,9 @@ body {
     padding-top: 25px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .about--people__content__img {
+    padding-right: 60px;
   }
 }
 
@@ -1626,9 +1646,50 @@ body {
   .about--environment__content__text__text {
     margin-bottom: 60px;
   }
+  .about--environment__content__text__img {
+    display: block;
+    position: relative;
+  }
+  .about--environment__content__text__line {
+    margin-bottom: 70px;
+  }
+  .about--environment__content__img {
+    display: none;
+  }
+  .about--environment__info {
+    margin-top: 0px;
+  }
+  .about--environment__info__cart__text {
+    padding: 0px 22px 0px 22px;
+  }
   .about--people {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .about--people__content__img {
+    display: none;
+  }
+  .about--people__content__text__img {
+    position: relative;
+    display: block;
+  }
+  .about--people__content__text__line {
+    margin-bottom: 60px;
+  }
+  .about--people__content__text__text {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .about--environment__info__cart__text {
+    padding: 0px 22px 0px 22px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .about--environment__info__cart__image {
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
