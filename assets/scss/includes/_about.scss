@@ -1,18 +1,18 @@
-.page--title{
-    font-family: GothamMediumRegular;
-    font-size: 55px;
-    color: $main-color-dark;
-    span{
-        font-family: GothamBlackRegular;
-    }
-    &__line{
-        border-top: 7px solid $page-light-blue;
-        max-width: 100px;
-        margin-left: 0;
-        margin-top: 0;
-    }    
-    white-space: pre-line;
-}
+// .page--title{
+//     font-family: GothamMediumRegular;
+//     font-size: 55px;
+//     color: $main-color-dark;
+//     span{
+//         font-family: GothamBlackRegular;
+//     }
+//     &__line{
+//         border-top: 7px solid $page-light-blue;
+//         max-width: 100px;
+//         margin-left: 0;
+//         margin-top: 0;
+//     }    
+//     white-space: pre-line;
+// }
 .rounded--img{
     img{
         border-top-left-radius: 70px;
@@ -33,11 +33,11 @@
         border-bottom-right-radius: 70px;
     }
 }
-.text--content{
-    font-family: GothamMediumRegular;
-    font-size: 16px;
-    white-space: pre-line;
-}
+// .text--content{
+//     font-family: GothamMediumRegular;
+//     font-size: 16px;
+//     white-space: pre-line;
+// }
 .about--overview{
     padding-top: 100px;
     background: $bg-blue;
@@ -46,7 +46,7 @@
             &__text{
                 color: #333333;
                 font-family: GothamMediumRegular;
-                font-size: 16px;
+                // font-size: 16px;
                 position: relative;
                 &::before{
                     content: '';
@@ -298,13 +298,13 @@
     }
 }
 @media only screen and (min-width: 1800px) {
-    .page--title{
-        font-size: 75px;
-        &__line{
-            border-top: 10px solid $page-light-blue;
-            max-width: 135px;
-        }
-    }
+    // .page--title{
+    //     font-size: 75px;
+    //     &__line{
+    //         border-top: 10px solid $page-light-blue;
+    //         max-width: 135px;
+    //     }
+    // }
     .about--overview{
         padding-top: 200px;
         &__content{
@@ -320,9 +320,9 @@
             }
         }
     }
-    .text--content{
-        font-size: 20px;
-    }
+    // .text--content{
+    //     font-size: 20px;
+    // }
     
     .about--mission{
         &__content{
@@ -410,10 +410,10 @@
     }
 }
 @media only screen and (max-width: 767px) {
-    .page--title{
-        font-size: 35px;
-        margin-top: 30px;
-    }
+    // .page--title{
+    //     font-size: 35px;
+    //     margin-top: 30px;
+    // }
     .rounded--img{
         ::after {
             right: -7px;
@@ -430,9 +430,9 @@
             }
         }
     }
-    .text--content{
-        font-size: 14px;
-    }
+    // .text--content{
+    //     font-size: 14px;
+    // }
     .about--integrated{
         &__content{
             &__text{
