@@ -1,3 +1,13 @@
+.slick-slide{
+    outline: none;
+    a{
+        &:focus{
+           outline: none;
+        }
+    }
+    
+}
+
 
 .products{
     background-color: $bg-blue;
@@ -202,7 +212,23 @@
                 }
             }
         }
+        &__all{
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url("../img/lines/Group 40.png");
+                position: absolute;
+                width: 120px;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                left: 0px;
+                bottom: 87px;
+            }
+        }
+        
     }
+    
     .products--agriculture{
         padding-bottom: 120px;
         &__left {
@@ -225,8 +251,36 @@
                 }
             }
         }
+        &__all{
+            position: relative;
+            &::before{                
+                content: '';
+                background-image: url("../img/lines/Line 6.png");
+                position: absolute;
+                width: 85px;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                left: 636px;
+                bottom: 45px;
+            }
+        }
     }
     .products--pipes{
+        &__all{
+            position: relative;
+            &::before{                
+                content: '';
+                background-image: url("../img/lines/Group 40.png");
+                position: absolute;
+                width: 120px;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                right: 80px;
+                bottom: 45px;
+            }
+        }
         padding-top: 100px;
         &__left {
             &__line{
@@ -269,8 +323,8 @@
                         padding: 15px 68px;
                         font-size: 22px;
                         &:hover{
-                            border-color: #91b544;
-                            background: #91b544;
+                            border-color: #008E45;
+                            background:#008E45;
                             -moz-transition: opacity 1s;
                             -ms-transition: opacity 1s;
                             -o-transition: opacity 1s;
@@ -337,6 +391,13 @@
             }
         }
     }
+    .products--agriculture{
+        &__left {
+            &__link{
+                margin-top: 165px!important;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 991px){
     .products{
@@ -359,6 +420,15 @@
                 }
             }
         }
+        .products--agriculture{
+            &__all{
+                position: relative;
+                &::before{                
+                    left: 0px;
+                    bottom: 45px;
+                }
+            }
+        }
         
     }  
 }
@@ -367,5 +437,35 @@
         .product--content{
             padding-top: 30px;
         }
+        .products--industries{
+            &__left{
+                &__text{
+                    margin-bottom: 0;
+                }
+            }            
+        }
+        .products--pipes{
+            &__right{
+                &__content{
+                    margin-top: 50px;
+                }
+            }
+            &__all{
+                &::before{                
+                    content: '';
+                    background-image: url("../img/lines/Group 40.png");
+                    position: absolute;
+                    width: 120px;
+                    height: 50px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    right: 100%;
+                    left: 0px;
+                    bottom: 25px;
+                }
+            }
+            
+        }
+        
     } 
 }
