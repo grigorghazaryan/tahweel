@@ -2025,8 +2025,8 @@ body {
 @media only screen and (max-width: 991px) {
   .products .products--pipes__right__content__info__link {
     position: absolute;
-    left: 33%;
-    top: 33%;
+    left: 28%;
+    top: 36%;
     font-family: GothamBold;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -2050,6 +2050,9 @@ body {
   .products .products--industries__left__text {
     margin-bottom: 0;
   }
+  .products .products--industries__left__link {
+    margin-top: 27px;
+  }
   .products .products--pipes__right__content {
     margin-top: 50px;
   }
@@ -2064,6 +2067,9 @@ body {
     right: 100%;
     left: 0px;
     bottom: 25px;
+  }
+  .products .products--packaging__all::before {
+    bottom: 0px;
   }
 }
 
