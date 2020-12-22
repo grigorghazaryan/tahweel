@@ -2433,6 +2433,12 @@ body {
   .media .media--slider__bottom__info__text {
     font-size: 14px;
   }
+  .media .media--slider .slick--slider--arrow.slick-next {
+    top: 125%;
+  }
+  .media .media--slider .slick--slider--arrow.slick-prev {
+    top: 125%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -2464,6 +2470,9 @@ body {
     min-width: fit-content;
     min-height: fit-content;
   }
+  .media .media--slider__slide__info__icon {
+    bottom: 15px;
+  }
   .media .media--slider__bottom__info__date {
     text-align: left;
     font-size: 14px;
@@ -2493,8 +2502,8 @@ body {
 
 .contact__info__right__content__img {
   max-width: 100%;
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 70px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 .contact__directory {
@@ -2518,11 +2527,14 @@ body {
   font-family: GothamBold;
   white-space: pre-line;
   font-size: 16px;
+  display: block;
+  width: fit-content;
 }
 
 .contact__directory__bottom__link:hover {
   color: #141A21;
   text-decoration: none;
+  opacity: 0.5;
 }
 
 .contact__directory__bottom__phone {
@@ -2580,6 +2592,10 @@ body {
   border-radius: 32px;
   font-size: 16px;
   padding: 5px 20px;
+}
+
+.contact__job__form__submit__button:hover {
+  background: #8CB044;
 }
 
 @media only screen and (min-width: 1800px) {

@@ -18,8 +18,8 @@
             &__content{
                 &__img{
                     max-width: 100%;
-                    border-top-left-radius: 70px;
-                    border-bottom-right-radius: 70px;
+                    border-top-left-radius: 80px;
+                    border-bottom-right-radius: 80px;
                 }
             }
             
@@ -49,9 +49,12 @@
                 font-family: GothamBold;
                 white-space: pre-line;
                 font-size: 16px;
+                display: block;
+                width: fit-content;
                 &:hover{
                     color: #141A21;
                     text-decoration: none;
+                    opacity: 0.5;
                 }
             }
             &__phone{
@@ -103,6 +106,9 @@
                     border-radius: 32px;
                     font-size: 16px;
                     padding: 5px 20px;
+                    &:hover{
+                        background: $slider-product-color;
+                    }
                 }
             }
         }
