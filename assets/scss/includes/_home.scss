@@ -366,34 +366,34 @@
                     }
                 }
             }
-            .link__active{
-                &:hover{
-                    h2{
-                        padding-top: 0;
-                        margin-top: 40px;
-                        width: 50%;
-                        height: 32%;
-                        min-width: fit-content;
-                        min-height: fit-content;
+            // .link__active{
+            //     &:hover{
+            //         h2{
+            //             padding-top: 0;
+            //             margin-top: 40px;
+            //             width: 50%;
+            //             height: 32%;
+            //             min-width: fit-content;
+            //             min-height: fit-content;
                         
-                        &::before{
-                            content: '';
-                            border-left: 10px solid #91B544;
-                            height: 30px;
-                            position: absolute;
-                            left: 0;
-                            top: 10px;
-                        }
-                    }
-                }
-            }
-            &:hover{
-                .why__arrow{
-                    background-color: rgba(145, 181, 68, 0.89);
-                    border: 1px solid #91B544;
-                }
+            //             &::before{
+            //                 content: '';
+            //                 border-left: 10px solid #91B544;
+            //                 height: 30px;
+            //                 position: absolute;
+            //                 left: 0;
+            //                 top: 10px;
+            //             }
+            //         }
+            //     }
+            // }
+            // &:hover{
+            //     .why__arrow{
+            //         background-color: rgba(145, 181, 68, 0.89);
+            //         border: 1px solid #91B544;
+            //     }
                 
-            }
+            // }
             &__content{
                 position: relative;
                 img{
@@ -479,6 +479,43 @@
             }
         }
     }
+    .home--why{
+        &__tab{
+            &__nav--link{
+                    .link__active{
+                        &:hover{
+                            h2{
+                                padding-top: 0;
+                                margin-top: 40px;
+                                width: 50%;
+                                height: 32%;
+                                min-width: fit-content;
+                                min-height: fit-content;
+                                
+                                &::before{
+                                    content: '';
+                                    border-left: 10px solid #91B544;
+                                    height: 30px;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 10px;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .why__arrow{
+                            background-color: rgba(145, 181, 68, 0.89);
+                            border: 1px solid #91B544;
+                        }
+                        
+                    }
+            }
+            
+        } 
+    }
+     
+    
 }
 @media only screen and (min-width: 1800px) {
     .banner{
@@ -506,6 +543,23 @@
                 &:nth-child(2){
                     margin-left: 15px;
                 }
+            }
+        }
+        .carousel-control-prev{
+            padding: 24px 22px;
+            min-height: 71px;
+            min-width: 71px;
+            right: 170px;
+            svg{
+                font-size: 20px;
+            }
+        }
+        .carousel-control-next{
+            padding: 24px 22px;
+            min-height: 71px;
+            min-width: 71px;
+            svg{
+                font-size: 20px;
             }
         }
     }
@@ -545,6 +599,16 @@
                     h2{
                         font-size: 50px!important;
                     }
+                    &__arrow{
+                        &.why__arrow{
+                            padding: 29px 31px;
+                            font-size: 25px;
+                            line-height: 1;
+                            min-height: 90px;
+                            min-width: 90px;
+                        }
+                    }
+                    
                 }
             }
             
@@ -643,13 +707,13 @@
                         }
                     }
                 }
-                .link__active{
-                    &:hover{
-                        h2{
-                            height: 48%;
-                        }
-                    }
-                }
+                // .link__active{
+                //     &:hover{
+                //         h2{
+                //             height: 48%;
+                //         }
+                //     }
+                // }
             }
         }
             
@@ -733,13 +797,13 @@
                         }
                     }
                 }
-                .link__active{
-                    &:hover{
-                        h2{
-                            height: 32%;
-                        }
-                    }
-                }
+                // .link__active{
+                //     &:hover{
+                //         h2{
+                //             height: 32%;
+                //         }
+                //     }
+                // }
             }
         }
     }
@@ -827,15 +891,15 @@
                         }
                     }
                 }
-                .link__active{
-                    &:hover{
-                        h2{
-                            &::before{
-                                height: 15px;
-                            }
-                        }
-                    }
-                }
+                // .link__active{
+                //     &:hover{
+                //         h2{
+                //             &::before{
+                //                 height: 15px;
+                //             }
+                //         }
+                //     }
+                // }
                 h2{
                     font-size: 20px;
                 }
