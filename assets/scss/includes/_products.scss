@@ -314,23 +314,32 @@
                     }
                     &__link{
                         position: absolute;
-                        left: 22%;
-                        top: 33%;
-                        font-family: GothamBold;
-                        border: 4px solid #ffffff;
-                        color: #ffffff;
-                        display: block;
-                        padding: 15px 68px;
-                        font-size: 22px;
-                        &:hover{
-                            border-color: #008E45;
-                            background:#008E45;
-                            -moz-transition: opacity 1s;
-                            -ms-transition: opacity 1s;
-                            -o-transition: opacity 1s;
-                            transition: opacity 1s;
-                            -webkit-transition: opacity 1s;
-                            text-decoration: none;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        a{
+                            width: fit-content;
+                            height: fit-content;
+                            font-family: GothamBold;
+                            border: 4px solid #ffffff;
+                            color: #ffffff;
+                            display: block;
+                            padding: 15px 68px;
+                            font-size: 22px;
+                            &:hover{
+                                border-color: #008E45;
+                                background:#008E45;
+                                -moz-transition: opacity 1s;
+                                -ms-transition: opacity 1s;
+                                -o-transition: opacity 1s;
+                                transition: opacity 1s;
+                                -webkit-transition: opacity 1s;
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
@@ -406,15 +415,15 @@
                 &__content{
                     &__info{
                         &__link{
-                            position: absolute;
-                            left: 28%;
-                            top: 36%;
-                            font-family: GothamBold;
-                            border: 2px solid #ffffff;
-                            color: #ffffff;
-                            display: block;
-                            padding: 15px 30px;
-                            font-size: 13px;
+                            a{
+                                font-family: GothamBold;
+                                border: 2px solid #ffffff;
+                                color: #ffffff;
+                                display: block;
+                                padding: 15px 30px;
+                                font-size: 13px;
+                            }
+                            
                         }
                     }
                 }

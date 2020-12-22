@@ -1967,8 +1967,18 @@ body {
 
 .products .products--pipes__right__content__info__link {
   position: absolute;
-  left: 22%;
-  top: 33%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products .products--pipes__right__content__info__link a {
+  width: fit-content;
+  height: fit-content;
   font-family: GothamBold;
   border: 4px solid #ffffff;
   color: #ffffff;
@@ -1977,7 +1987,7 @@ body {
   font-size: 22px;
 }
 
-.products .products--pipes__right__content__info__link:hover {
+.products .products--pipes__right__content__info__link a:hover {
   border-color: #008E45;
   background: #008E45;
   transition: opacity 1s;
@@ -2023,10 +2033,7 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
-  .products .products--pipes__right__content__info__link {
-    position: absolute;
-    left: 28%;
-    top: 36%;
+  .products .products--pipes__right__content__info__link a {
     font-family: GothamBold;
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -2463,6 +2470,207 @@ body {
   }
   .media .media--slider__bottom__info__text {
     font-size: 14px;
+  }
+}
+
+.contact__info {
+  background-color: #edf8fc;
+  padding: 40px 0px;
+}
+
+.contact__info__left__content__title {
+  color: #333333;
+}
+
+.contact__info__left__content__text {
+  font-family: GothamMediumRegular;
+  font-size: 16px;
+}
+
+.contact__info__right {
+  text-align: right;
+}
+
+.contact__info__right__content__img {
+  max-width: 100%;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+.contact__directory {
+  background: url("../img/contact/Texture.svg");
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+.contact__directory__top__content__title {
+  color: #333333;
+}
+
+.contact__directory__top__content__text {
+  font-size: 16px;
+  font-family: GothamMediumRegular;
+}
+
+.contact__directory__bottom__link {
+  color: #141A21;
+  text-decoration: none;
+  font-family: GothamBold;
+  white-space: pre-line;
+  font-size: 16px;
+}
+
+.contact__directory__bottom__link:hover {
+  color: #141A21;
+  text-decoration: none;
+}
+
+.contact__directory__bottom__phone {
+  font-size: 16px;
+  font-family: GothamBookRegular;
+  white-space: pre-line;
+}
+
+.contact__directory__bottom__phone span {
+  font-family: GothamMediumRegular;
+}
+
+.contact__job {
+  background-color: #edf8fc;
+  padding: 40px 0px;
+}
+
+.contact__job__form__label {
+  font-size: 16px;
+  font-family: GothamBookRegular;
+  color: rgba(51, 51, 51, 0.62);
+}
+
+.contact__job__form__label span {
+  color: #ff0000;
+}
+
+.contact__job__form__input {
+  border-radius: 32px;
+  box-shadow: inset -1px 3px 12px 0px rgba(46, 61, 73, 0.2) !important;
+  padding: 7px 15px 7px 30px;
+  border: 1px solid #ABABAB;
+  width: 100%;
+  font-family: GothamBookRegular;
+  height: auto;
+}
+
+.contact__job__form__input:focus {
+  border-color: #ABABAB;
+}
+
+.contact__job__form__textarea {
+  max-height: 208px;
+}
+
+.contact__job__form__submit {
+  text-align: center;
+}
+
+.contact__job__form__submit__button {
+  color: #ffffff;
+  background: #005F84;
+  border: none;
+  font-family: GothamBold;
+  border-radius: 32px;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .contact__info {
+    padding: 80px 0px;
+  }
+  .contact__info__left__content__title {
+    margin-top: 80px;
+  }
+  .contact__info__left__content__text {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 40px;
+  }
+  .contact__info__right {
+    text-align: right;
+  }
+  .contact__info__right__content__img {
+    max-width: 80%;
+  }
+  .contact__directory {
+    padding: 100px 0px;
+  }
+  .contact__directory__top__content__title {
+    line-height: 66px;
+  }
+  .contact__directory__top__content__line {
+    margin-top: 20px;
+  }
+  .contact__directory__top__content__text {
+    font-size: 25px;
+    margin-top: 80px;
+  }
+  .contact__directory__bottom {
+    margin-top: 100px;
+  }
+  .contact__directory__bottom__link {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  .contact__directory__bottom__phone {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  .contact__job {
+    background-color: #edf8fc;
+    padding: 100px 0px;
+  }
+  .contact__job__form .form-group {
+    margin-bottom: 30px;
+  }
+  .contact__job__form__label {
+    font-size: 25px;
+  }
+  .contact__job__form__input {
+    padding: 19px 15px 19px 30px;
+    margin-left: 15px;
+  }
+  .contact__job__form__textarea {
+    min-height: 346px;
+  }
+  .contact__job__form__submit__button {
+    font-size: 26px;
+    line-height: 31px;
+    padding: 10px 31px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact__info {
+    padding: 20px 0px 60px 0px;
+  }
+  .contact__info__left__content__text {
+    font-size: 14px;
+  }
+  .contact__directory {
+    padding: 20px 0px 60px 0px;
+  }
+  .contact__directory__top__content__text {
+    font-size: 14px;
+  }
+  .contact__directory__bottom__link {
+    font-size: 14px;
+  }
+  .contact__directory__bottom__phone {
+    font-size: 14px;
+  }
+  .contact__job__form__label {
+    font-size: 14px;
+    padding-left: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
