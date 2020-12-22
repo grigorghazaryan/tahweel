@@ -18,7 +18,7 @@
     .media--slider{
         margin-top: 100px;
         
-        .slick--slider--arrow{
+        .slick--slider--arrow{ 
             bottom: 30px;
             color: #fff;
             z-index: 10;
@@ -152,21 +152,21 @@
                         min-height: fit-content;
                     }
                 }
-                &:hover{
-                    .slider--icon{
-                        background-color: $slider-product-color;
-                        -webkit-transform: rotate(180deg);
-                        transform: rotate(180deg);
-                    }
-                    .slider--text{
-                        padding-top: 0;
-                        margin-top: 195px;
-                        width: 70%;
-                        height: 41%;
-                        min-width: fit-content;
-                        min-height: fit-content;
-                    }
-                }
+                // &:hover{
+                //     .slider--icon{
+                //         background-color: $slider-product-color;
+                //         -webkit-transform: rotate(180deg);
+                //         transform: rotate(180deg);
+                //     }
+                //     // .slider--text{
+                //     //     padding-top: 0;
+                //     //     margin-top: 195px;
+                //     //     width: 70%;
+                //     //     height: 41%;
+                //     //     min-width: fit-content;
+                //     //     min-height: fit-content;
+                //     // }
+                // }
             }
             
         }
@@ -255,10 +255,41 @@
                     right: 90px;
                 }
             }
+            &__slide{
+                &__info{
+                    &:hover{
+                        .slider--text{
+                            padding-top: 0;
+                            margin-top: 195px;
+                            width: 70%;
+                            height: 41%;
+                            min-width: fit-content;
+                            min-height: fit-content;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-
+@media only screen and (min-width: 768px){
+    
+    .media{
+        .media--slider{
+            &__slide{
+                &__info{
+                    &:hover{
+                        .slider--icon{
+                            background-color: $slider-product-color;
+                            -webkit-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1799px){
     .media{
         .media--slider{
@@ -283,19 +314,39 @@
                                 min-height: fit-content;
                             }
                         }
-                        &:hover{
-                            .slider--text{
-                                padding-top: 0;
-                                margin-top: 130px;
-                                width: 70%;
-                                height: 41%;
-                                min-width: fit-content;
-                                min-height: fit-content;
-                            }
-                        }
+                        // &:hover{
+                        //     .slider--text{
+                        //         padding-top: 0;
+                        //         margin-top: 130px;
+                        //         width: 70%;
+                        //         height: 41%;
+                        //         min-width: fit-content;
+                        //         min-height: fit-content;
+                        //     }
+                        // }
                     }
                     
                 }
+        }
+    }
+}
+@media only screen and (max-width: 1799px) and (min-width: 1200px){
+    .media{
+        .media--slider{
+            &__slide{
+                &__info{
+                    &:hover{
+                        .slider--text{
+                            padding-top: 0;
+                            margin-top: 130px;
+                            width: 70%;
+                            height: 41%;
+                            min-width: fit-content;
+                            min-height: fit-content;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -322,6 +373,26 @@
                             min-height: fit-content;
                         }
                     }
+                    // &:hover{
+                    //     .slider--text{
+                    //         padding-top: 0;
+                    //         margin-top: 105px;
+                    //         width: 70%;
+                    //         height: 41%;
+                    //         min-width: fit-content;
+                    //         min-height: fit-content;
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+    .media{
+        .media--slider{
+            &__slide{
+                &__info{
                     &:hover{
                         .slider--text{
                             padding-top: 0;
@@ -336,8 +407,29 @@
             }
         }
     }
-}
 
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .media{
+        .media--slider{
+            &__slide{
+                &__info{
+                    &:hover{
+                        .slider--text{
+                            padding-top: 0;
+                            margin-top: 200px;
+                            width: 70%;
+                            height: 33%;
+                            min-width: fit-content;
+                            min-height: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
 @media only screen and (max-width: 991px){
     .media{
         .media--slider{
@@ -360,16 +452,16 @@
                             min-height: fit-content;
                         }
                     }
-                    &:hover{
-                        .slider--text{
-                            padding-top: 0;
-                            margin-top: 200px;
-                            width: 70%;
-                            height: 33%;
-                            min-width: fit-content;
-                            min-height: fit-content;
-                        }
-                    }
+                    // &:hover{
+                    //     .slider--text{
+                    //         padding-top: 0;
+                    //         margin-top: 200px;
+                    //         width: 70%;
+                    //         height: 33%;
+                    //         min-width: fit-content;
+                    //         min-height: fit-content;
+                    //     }
+                    // }
                 }
             }
         }
@@ -397,16 +489,16 @@
                             min-height: fit-content;
                         }
                     }
-                    &:hover{
-                        .slider--text{
-                            padding-top: 0;
-                            margin-top: 105px;
-                            width: 70%;
-                            height: 41%;
-                            min-width: fit-content;
-                            min-height: fit-content;
-                        }
-                    }
+                    // &:hover{
+                    //     .slider--text{
+                    //         padding-top:  105px;
+                    //         margin-top: 0px;
+                    //         width: 100%;
+                    //         height: 100%;
+                    //         min-width: fit-content;
+                    //         min-height: fit-content;
+                    //     }
+                    // }
                 }
             }
             &__bottom{
@@ -459,16 +551,16 @@
                             min-height: fit-content;
                         }
                     }
-                    &:hover{
-                        .slider--text{
-                            padding-top: 0;
-                            margin-top: 15px;
-                            width: 70%;
-                            height: 41%;
-                            min-width: fit-content;
-                            min-height: fit-content;
-                        }
-                    }
+                    // &:hover{
+                    //     .slider--text{
+                    //         padding-top: 15px;
+                    //         margin-top: 0px;
+                    //         width: 100%;
+                    //         height: 100%;
+                    //         min-width: fit-content;
+                    //         min-height: fit-content;
+                    //     }
+                    // }
                     &__icon{
                         bottom: 15px;
                     }
